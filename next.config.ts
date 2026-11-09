@@ -1,12 +1,19 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  // 静态导出
+  output: "export",
+
+  // 缓存与部分预取
+  cacheComponents: true,
+  partialPrefetching: true,
+
+  // 实验性功能
   experimental: {
     agentFeedback: true,
   },
-  cacheComponents: true,
-  partialPrefetching: true,
+
+  // Turbopack 配置
   turbopack: {
     rules: {
       "*.css": {
