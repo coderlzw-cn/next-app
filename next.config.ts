@@ -4,9 +4,9 @@ const nextConfig: NextConfig = {
   // 静态导出
   output: "export",
 
-  // 缓存与部分预取
-  cacheComponents: true,
-  partialPrefetching: true,
+  // 禁用 Cache Components 和部分预取
+  cacheComponents: false,
+  partialPrefetching: false,
 
   // 实验性功能
   experimental: {
