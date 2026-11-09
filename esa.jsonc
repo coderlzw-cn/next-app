@@ -1,6 +1,6 @@
 {
   "name": "next-app",
-  "installCommand": "pnpm install",
+  "installCommand": "npm install",
   "assets": {
     "directory": "./out"
   }
